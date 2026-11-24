@@ -47,6 +47,9 @@
       .slide.active {
         display: flex;
       }
+      .count {
+        font-variant-numeric: tabular-nums;
+      }
       .qr img,
       .qr canvas {
         width: 100%;
@@ -131,15 +134,15 @@
           <div class="flex flex-wrap gap-4">
             <span
               class="border-4 border-black bg-black text-white px-5 py-2 text-xl lg:text-2xl font-black uppercase"
-              >12 Entities</span
+              ><span class="count" data-to="12">12</span> Entities</span
             >
             <span
               class="border-4 border-black px-5 py-2 text-xl lg:text-2xl font-black uppercase"
-              >15 Relationships</span
+              ><span class="count" data-to="15">15</span> Relationships</span
             >
             <span
               class="border-4 border-black px-5 py-2 text-xl lg:text-2xl font-black uppercase"
-              >41 Branches</span
+              ><span class="count" data-to="41">41</span> Branches</span
             >
             <span
               class="border-4 border-black px-5 py-2 text-xl lg:text-2xl font-black uppercase"
@@ -349,7 +352,7 @@
             class="border-4 border-black bg-qtint shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col items-center justify-center text-center p-6 slide-element delay-200"
           >
             <i data-lucide="building-2" class="w-14 h-14"></i
-            ><b class="mt-4 text-[5.5rem] leading-none font-black">41</b
+            ><b class="mt-4 text-[5.5rem] leading-none font-black"><span class="count" data-to="41">41</span></b
             ><span
               class="mt-3 text-xl lg:text-2xl font-bold uppercase leading-tight"
               >Branches<br /><span class="text-gray-600"
@@ -361,7 +364,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-200"
           >
             <i data-lucide="users" class="w-14 h-14"></i
-            ><b class="mt-4 text-[5.5rem] leading-none font-black">23</b
+            ><b class="mt-4 text-[5.5rem] leading-none font-black"><span class="count" data-to="23">23</span></b
             ><span
               class="mt-3 text-xl lg:text-2xl font-bold uppercase leading-tight"
               >Staff per<br />branch</span
@@ -371,7 +374,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-300"
           >
             <i data-lucide="chef-hat" class="w-14 h-14"></i
-            ><b class="mt-4 text-[5.5rem] leading-none font-black">5</b
+            ><b class="mt-4 text-[5.5rem] leading-none font-black"><span class="count" data-to="5">5</span></b
             ><span
               class="mt-3 text-xl lg:text-2xl font-bold uppercase leading-tight"
               >Kitchen<br />stalls</span
@@ -381,7 +384,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-300"
           >
             <i data-lucide="credit-card" class="w-14 h-14"></i
-            ><b class="mt-4 text-[5.5rem] leading-none font-black">4</b
+            ><b class="mt-4 text-[5.5rem] leading-none font-black"><span class="count" data-to="4">4</span></b
             ><span
               class="mt-3 text-xl lg:text-2xl font-bold uppercase leading-tight"
               >Payment<br />methods</span
@@ -391,7 +394,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-400"
           >
             <i data-lucide="graduation-cap" class="w-14 h-14"></i
-            ><b class="mt-4 text-[5.5rem] leading-none font-black">10%</b
+            ><b class="mt-4 text-[5.5rem] leading-none font-black"><span class="count" data-to="10" data-suffix="%">10%</span></b
             ><span
               class="mt-3 text-xl lg:text-2xl font-bold uppercase leading-tight"
               >UM student<br />discount</span
@@ -401,7 +404,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-400"
           >
             <i data-lucide="id-card" class="w-14 h-14"></i
-            ><b class="mt-4 text-[5.5rem] leading-none font-black">20%</b
+            ><b class="mt-4 text-[5.5rem] leading-none font-black"><span class="count" data-to="20" data-suffix="%">20%</span></b
             ><span
               class="mt-3 text-xl lg:text-2xl font-bold uppercase leading-tight"
               >UM staff<br />discount</span
@@ -441,7 +444,7 @@
           >
             <span
               class="absolute -top-5 left-6 bg-black text-white px-4 py-1 text-2xl font-black"
-              >×1</span
+              >×<span class="count" data-to="1">1</span></span
             >
             <i data-lucide="user-cog" class="w-16 h-16 mt-2"></i>
             <h3
@@ -460,7 +463,7 @@
           >
             <span
               class="absolute -top-5 left-6 bg-black text-white px-4 py-1 text-2xl font-black"
-              >×2</span
+              >×<span class="count" data-to="2">2</span></span
             >
             <i data-lucide="clipboard-check" class="w-16 h-16 mt-2"></i>
             <h3
@@ -515,7 +518,7 @@
             <h3
               class="text-3xl font-bold uppercase tracking-tight flex items-center gap-3"
             >
-              <span class="w-5 h-5 bg-amber border-2 border-black"></span>5
+              <span class="w-5 h-5 bg-amber border-2 border-black"></span><span class="count" data-to="5">5</span>
               Kitchen stalls
             </h3>
             <div class="mt-5 flex flex-wrap gap-3">
@@ -545,7 +548,7 @@
             <h3
               class="text-3xl font-bold uppercase tracking-tight flex items-center gap-3"
             >
-              <span class="w-5 h-5 bg-teal border-2 border-black"></span>4
+              <span class="w-5 h-5 bg-teal border-2 border-black"></span><span class="count" data-to="4">4</span>
               Payment methods
             </h3>
             <div class="mt-5 flex flex-wrap gap-3">
@@ -1083,7 +1086,7 @@
             <p
               class="text-2xl lg:text-3xl font-black uppercase tracking-tight mt-1"
             >
-              15 rules · 14 one-to-many · 1 one-to-one
+              <span class="count" data-to="15">15</span> rules · <span class="count" data-to="14">14</span> one-to-many · <span class="count" data-to="1">1</span> one-to-one
             </p>
           </div>
         </div>
@@ -1482,7 +1485,7 @@
             class="border-4 border-black bg-qtint shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col items-center justify-center text-center p-6 slide-element delay-200"
           >
             <i data-lucide="layers" class="w-14 h-14"></i
-            ><b class="mt-3 text-[7rem] leading-none font-black">12</b
+            ><b class="mt-3 text-[7rem] leading-none font-black"><span class="count" data-to="12">12</span></b
             ><span class="mt-2 text-2xl lg:text-3xl font-bold uppercase"
               >Entities</span
             >
@@ -1491,7 +1494,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-300"
           >
             <i data-lucide="link-2" class="w-14 h-14"></i
-            ><b class="mt-3 text-[7rem] leading-none font-black">15</b
+            ><b class="mt-3 text-[7rem] leading-none font-black"><span class="count" data-to="15">15</span></b
             ><span class="mt-2 text-2xl lg:text-3xl font-bold uppercase"
               >Relationships</span
             >
@@ -1500,7 +1503,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-400"
           >
             <i data-lucide="git-fork" class="w-14 h-14"></i
-            ><b class="mt-3 text-[7rem] leading-none font-black">14</b
+            ><b class="mt-3 text-[7rem] leading-none font-black"><span class="count" data-to="14">14</span></b
             ><span class="mt-2 text-2xl lg:text-3xl font-bold uppercase"
               >One-to-many</span
             >
@@ -1509,7 +1512,7 @@
             class="border-2 border-black flex flex-col items-center justify-center text-center p-6 slide-element delay-500"
           >
             <i data-lucide="link" class="w-14 h-14"></i
-            ><b class="mt-3 text-[7rem] leading-none font-black text-q">1</b
+            ><b class="mt-3 text-[7rem] leading-none font-black text-q"><span class="count" data-to="1">1</span></b
             ><span class="mt-2 text-2xl lg:text-3xl font-bold uppercase"
               >One-to-one</span
             >
@@ -1783,5 +1786,34 @@
         }, 50);
       });
     </script>
-  </body>
+  <script>
+  // Count-up: every .count animates from 0 to data-to each time its slide becomes active.
+  (() => {
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const ease = t => 1 - Math.pow(1 - t, 3);
+    function countUp(slide) {
+      slide.querySelectorAll(".count").forEach(el => {
+        const to = +el.dataset.to, suf = el.dataset.suffix || "";
+        if (reduce) { el.textContent = to + suf; return; }
+        clearTimeout(el._timer);
+        el.textContent = "0" + suf;
+        const delay = 250, dur = 1400, start = performance.now() + delay;
+        const step = () => {
+          const t = Math.min(1, Math.max(0, (performance.now() - start) / dur));
+          el.textContent = Math.round(to * ease(t)) + suf;
+          if (t < 1) el._timer = setTimeout(step, 16);
+        };
+        el._timer = setTimeout(step, 16);
+      });
+    }
+    const slides = document.querySelectorAll(".slide");
+    const obs = new MutationObserver(muts => muts.forEach(m => {
+      if (m.target.classList.contains("active") && !(m.oldValue || "").split(/\s+/).includes("active")) countUp(m.target);
+    }));
+    slides.forEach(s => obs.observe(s, { attributes: true, attributeFilter: ["class"], attributeOldValue: true }));
+    const first = document.querySelector(".slide.active");
+    if (first) countUp(first);
+  })();
+</script>
+</body>
 </html>

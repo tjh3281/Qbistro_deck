@@ -1,6 +1,6 @@
-﻿# Q Bistro POS & Kitchen Ordering Database: Presentation Deck
+# Q Bistro POS & Kitchen Ordering Database: Presentation Deck
 
-WIA2001-Database · Group OCC 8-1 · Group Project Presentation 2
+WIA2001-Database · Group OCC 8-1 · Group Project Presentation
 
 A 10-slide HTML presentation of our database design for Q Bistro: business understanding, business rules, user requirements, entities, and the normalized ERD, plus an appendix with photos and project files.
 
